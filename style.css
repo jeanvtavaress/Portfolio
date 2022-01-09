@@ -46,6 +46,10 @@ button {
     font-size: 18px;
 }
 
+.title-green {
+    color: var(--green);
+}
+
 header {
     height: calc(100vh - 65px);
     display: flex;
@@ -60,10 +64,6 @@ header .container {
 
 header .container img {
     display: none;
-}
-
-header .container h1 {
-    color: var(--green);
 }
 
 header .container button {
@@ -103,10 +103,25 @@ nav ul a svg {
     display: none;
 }
 
-section {
-    height: 1500px;
-   
+.about-me {
+    display: flex;
+    padding: 100px;
 }
+
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+.about-me .img-container {
+    width: 50%;
+    text-align: center;
+}
+
+
+.about-me .img-container img {
+    width: 60%;
+}
+
 @media (max-width: 1000px) {
     header .container {
         width: 100%;
@@ -150,6 +165,10 @@ section {
     }
     
     nav {
+        position: fixed;
+        bottom: 0;
+        top: unset;
+        width: 100%;
         padding: 0 15px;
     }
 
